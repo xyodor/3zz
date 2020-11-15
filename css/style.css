@@ -1,0 +1,345 @@
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    direction: rtl;
+}
+
+/* Global */
+
+
+
+/* Colors */
+
+/* rgb(203,232,107), rgb(28,20,13),  rgb(242,233,225), rgb(255,255,255) */
+
+.c1 {
+    /* background-image: linear-gradient(to right, rgb(203,232,107, 0.3), rgb(203,232,107, 1)); */
+    background: rgb(255,255,255);
+    background: linear-gradient(34deg, rgb(195 225 96) 0%, rgb(204 232 111) 46%, rgba(203,232,107,1) 100%);
+}
+.c2 {
+    background-image: linear-gradient(180deg, rgb(255 255 255), rgb(242 233 225) );
+}
+/* Colors */
+
+
+/* Page Structure */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 14%;
+    top: 0;
+    z-index: 10;
+    
+}
+
+header > .holder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+header > .holder > .right {
+    width: 34%;
+    height: 100;
+    /* background-color: #777; */
+    display: flex;
+}
+
+header > .holder > .right > svg {
+    width: 94%;
+    position: relative;
+    top: 20%;
+    
+}
+header > .holder > .right > span {
+    width: 6%;
+    height: 100%;
+    border-bottom: 1px solid #333;
+}
+
+header > .holder > .left {
+    width: 66%;
+    height: 100%;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    position: relative;
+}
+
+header > .holder > .left > ul {
+    list-style: none;
+    margin: 0 auto;
+    position: absolute;
+    display: flex;
+    bottom: -13px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+
+header > .holder > .left > ul > li {
+    display: inline-block;
+    padding: 5px 7px;
+    background-color: #2f2c18;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+header > .holder > .left > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+}
+
+
+main {
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    bottom: 6%;
+    z-index: 8;
+}
+
+main > div.page {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #333;
+}
+
+
+main > div.page > div.body {
+    margin: 6% 0px;
+    padding: 0 10px;
+}
+
+main > div.page > div.body > section.books {
+    display: block;
+}
+main > div.page > div.body > section.books > div.bookContainer {
+    perspective: 600px;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+
+main > div.page > div.body > section.books > div.bookContainer > div.book {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    transform-style: preserve-3d;
+    border-radius: 5px;
+    transition: transform 300ms ease-in-out;
+}
+
+main > div.page > div.body > section.books > div.bookContainer:hover > div.book {
+    transform: rotateY(180deg);
+}
+
+main > div.page > div.body > section.books > div.bookContainer > div.book > .front{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+}
+main > div.page > div.body > section.books > div.bookContainer > div.book > .front > img {
+    width: inherit;
+    /* height: inherit; */
+    border: 1px solid  rgb(28,20,13);
+    display: inline-block;
+    /* border-radius: 3px; */
+    padding: 2px;
+}
+main > div.page > div.body > section.books > div.bookContainer > div.book > .back {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border: 1px solid rgb(28,20,13);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #2f2c18;
+    
+}
+
+main > div.page > div.body > section.books > div.bookContainer > div.book > .back > p {
+    text-align: justify;
+    flex: 1 0 auto;
+    padding: 10px;
+}
+main > div.page > div.body > section.books > div.bookContainer > div.book > .back > h3 {
+    padding: 10px 10px 0 10px;
+}
+main > div.page > div.body > section.books > div.bookContainer > div.book > .back > footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: #2f2c18;
+    color: #fff;
+}
+main > div.page > div.body > section.books > div.bookContainer > div.book > .back > footer > span {
+    display: block;
+}
+
+main > div.page > div.body > section.articals {
+    padding: 10px;
+    background-color: #777;
+    display: none;
+}
+
+nav#main {
+    position: fixed;
+
+    width: 100%;
+    height: 12%; 
+    z-index: 9;
+    transition: bottom 300ms ease-in-out;
+}
+
+body > nav {
+    bottom: -6%;
+}
+
+.navActive {
+    bottom: 0%;
+}
+
+nav#main > div.flex {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgb(28,20,13);
+    display: flex;
+    flex-direction: column;
+}
+
+nav#main > div.flex > div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+nav#main > div.flex > div.top {
+    align-items: center;
+    /* border-bottom: 1px solid rgb(56, 40, 26); */
+}
+
+nav#main > div.flex > div.top > p {
+    width: 45%;
+    height: 100%;
+    /* background-color: #333; */
+    color: #fff;
+    text-align: center;
+    line-height: 210%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(28,20,13);
+    cursor: pointer;
+}
+
+nav#main > div.flex > div.top > p:hover {
+    border-top: 1px solid rgb(28,20,13);
+}
+
+nav#main > div.flex > div.top > span {
+    width: 10%;
+    height: 100%;
+    display: block;
+    text-align: center
+}
+nav#main > div.flex > div.top > span > span {
+    display: inline-block;
+    background-color: rgb(28,20,13);
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    bottom: 14px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+nav#main > div.flex > div.top > span > span.spanActive {
+    transform: rotateZ(180deg);
+    
+}
+
+
+
+nav#main > div.flex > div.bottom {
+    /* border-top: 1px solid rgb(28,20,13); */
+}
+
+nav#main > div.flex > div.bottom > div.social {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+nav#main > div.flex > div.bottom > div.social > ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+
+}
+nav#main > div.flex > div.bottom > div.social > ul > li {
+    float: right;
+    margin: 0;
+    margin-left: -7px;
+
+}
+nav#main > div.flex > div.bottom > div.social > ul > li > a{text-decoration: none;}
+nav#main > div.flex > div.bottom > div.social > ul > li > a > img {
+    width: 40px;
+    padding: 4px;
+}
+
+nav#main > div.flex > div.bottom > div.designer {
+    width: 30%;
+}
+
+nav#main > div.flex > div.bottom > div.designer > a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: rgb(28,20,13);
+    display: block;
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+/* - Page Structure */
