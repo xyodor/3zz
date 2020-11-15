@@ -5,7 +5,6 @@ let navbar = document.querySelector("nav#main"),
     articals = document.querySelector("nav#main > div.flex > div.top > p:last-of-type"),
     books_section = document.querySelector("main > div.page > div.body > section.books"),
     articals_section = document.querySelector("main > div.page > div.body > section.articals");
-    console.log(articals_section, books_section);
 
 
     navspan.addEventListener("click", () => {
