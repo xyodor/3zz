@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css/all.css">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Azooz Blog</title>
@@ -1044,8 +1047,8 @@
             </div>
             <div class="left">
                 <ul>
-                    <li><a href="">الرئيسية</a></li>
-                    <li><a href="">الروابط</a></li>
+                    <li><a href="">الأرشيف</a></li>
+                    <li><a href="">التصنيفات</a></li>
                     <li><a href="">نبذة عن الكاتب</a></li>
                 </ul>
             </div>
@@ -1057,12 +1060,14 @@
        <div class="page c2">
            <div class="body">
                
-            <section class="books">
+            <section id="books" class="">
                 <!-- Book -->
                 <div class="bookContainer">
                     <div class="book">
                         <div class="front">
-                            <img src="images/Book1.jpg" alt="Book Name">
+                            <div class="imagecontainer">
+                                <img src="images/Book1.jpg" alt="Book Name">
+                            </div>
                         </div>
                         <div class="back c1">
                             <h3>لنعيش الحياة هكذا</h3>
@@ -1083,7 +1088,9 @@
                 <div class="bookContainer">
                     <div class="book">
                         <div class="front">
-                            <img src="images/book2.jpg" alt="Book Name">
+                            <div class="imagecontainer">
+                                <img src="images/book2.jpg" alt="Book Name">
+                            </div>
                         </div>
                         <div class="back c1">
                             <h3>لنعيش الحياة هكذا</h3>
@@ -1105,17 +1112,104 @@
 
 
             <!-- Articals -->
-            <section class="articals c1">
-                هنا المقالات 
+            <section id="articals">
+
+                <article>
+                    <section class="body c1">
+                        <header>
+                            <h2><a href="#articals">عنوان المقالة</a></h2>
+                            <span><a href="#articals"><i class="fas fa-share-alt"></a></i></span>
+                        </header>
+                        <nav><time datetime="20-7-2020T06:10">نوفمبر 17, 2020</time></nav>
+                        <div class="thump">
+                            <div class="top">
+                                 <img src="https://instagram.fjed6-2.fna.fbcdn.net/v/t51.2885-15/e35/125463165_470265963944758_3712192311210874119_n.jpg?_nc_ht=instagram.fjed6-2.fna.fbcdn.net&_nc_cat=110&_nc_ohc=J7WIq6nyp70AX_98zAL&tp=18&oh=cc620b62de1d8c95f03f39c0798087d1&oe=5FDF1EB2" alt="Samurai Man">
+                            </div>
+                            <div class="bottom">
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
+                                هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+                                <span>...</span></p>
+                            </div>
+                        </div>
+                    </section>
+                    <footer>
+                        <div class="left"><span>قراءة المزيد</span></div>
+                        <div class="right"><span>إرسال تعليق</span></div>
+                    </footer>
+                </article>
+
+                <article>
+                    <section class="body c1">
+                        <header>
+                            <h2><a href="#articals">عنوان المقالة</a></h2>
+                            <span><i class="fas fa-share-alt"></i></span>
+                        </header>
+                        <nav><time datetime="">نوفمبر 17, 2020</time></nav>
+                        <div class="thump">
+                            <div class="top">
+                                 <img src="https://instagram.fjed6-2.fna.fbcdn.net/v/t51.2885-15/e35/125463165_470265963944758_3712192311210874119_n.jpg?_nc_ht=instagram.fjed6-2.fna.fbcdn.net&_nc_cat=110&_nc_ohc=J7WIq6nyp70AX_98zAL&tp=18&oh=cc620b62de1d8c95f03f39c0798087d1&oe=5FDF1EB2" alt="Samurai Man">
+                            </div>
+                            <div class="bottom">
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
+                                هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+                                <span>...</span></p>
+                            </div>
+                        </div>
+                    </section>
+                    <footer>
+                        <div class="left"><span>قراءة المزيد</span></div>
+                        <div class="right"><span>إرسال تعليق</span></div>
+                    </footer>
+                </article>
+
             </section>
             <!-- Articals -->
+
+
+            <!-- Articals Page -->
+            <section id="article">
+                <article>
+                    <header class="c1 border-b1">
+                        <div class="title">
+                            <h2><a>عنوان المقالة</a></h2>
+                            <span><a><i class="fas fa-share-alt"></i></a></span>
+                        </div>
+                        <span><time datetime="20-7-2020T06:10">نوفمبر 17, 2020</time></span>
+                    </header>
+                    <div class="articleBody border-b1">
+                        <img src="https://instagram.fjed6-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/125325967_173240307768199_325730765755552638_n.jpg?_nc_ht=instagram.fjed6-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=0N8UI7oBof0AX_J2O-I&_nc_tp=24&oh=60478516b5f97b21940f0016644ef4de&oe=5FDDA2BA" alt="image1">
+                        <img src="https://instagram.fjed6-2.fna.fbcdn.net/v/t51.2885-15/e35/125463165_470265963944758_3712192311210874119_n.jpg?_nc_ht=instagram.fjed6-2.fna.fbcdn.net&_nc_cat=110&_nc_ohc=J7WIq6nyp70AX_98zAL&tp=18&oh=cc620b62de1d8c95f03f39c0798087d1&oe=5FDF1EB2" alt="image2">
+                        <p style="text-align: center;">This is A Test Artical</p>
+                        <p style="text-align: center;"><span style="background-color: white; font-family: JannaLT-Regular; font-size: 18px; text-align: right;">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</span><br class="line-break" style="background-color: white; font-family: JannaLT-Regular; font-size: 18px; margin-bottom: 27px; text-align: right;"><span style="background-color: white; font-family: JannaLT-Regular; font-size: 18px; text-align: right;">إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</span><br class="line-break" style="background-color: white; font-family: JannaLT-Regular; font-size: 18px; margin-bottom: 27px; text-align: right;"><span style="background-color: white; font-family: JannaLT-Regular; font-size: 18px; text-align: right;">ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</span><br class="line-break" style="background-color: white; font-family: JannaLT-Regular; font-size: 18px; margin-bottom: 27px; text-align: right;"><span style="background-color: white; font-family: JannaLT-Regular; font-size: 18px; text-align: right;">هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.</span></p>
+                    </div>
+                    <footer>
+                        <div class="tail">
+                            <span><a><i class="fas fa-share-alt"></i></a></span>
+                            <div class="tags">
+                                <ul>
+                                    <li><a>مظاهر</a></li>
+                                    <li><a>أروقة</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="comments">هنا منطقة التعليقات</div>
+                    </footer>
+                </article>
+            </section>
+            <!-- Articals Page -->
+
+
            </div>
        </div>
    </main>
    <!-- Main End -->
 
    <!-- Bottom Nav -->
-   <nav id="main" class="c1">
+   <nav id="main" class="c1" style="bottom: -36px">
        <div class="flex">
            <div class="top">
                <p>الكتب</p>
