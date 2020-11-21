@@ -93,6 +93,22 @@ main_page.addEventListener("scroll", scro => {
     last_scrolling_possition = main_page.scrollTop;
 })
 
+window.addEventListener("scroll", scro => {
+let nav_bottom = navbar.style.bottom;
+    if (window.scrollY >= last_scrolling_possition && nav_bottom == "-36px") {
+        navbar.style.bottom = "-68px";
+        navspan.classList.add("spanFixed");
+    }
+    if (window.scrollY < last_scrolling_possition && nav_bottom == "-68px") {
+        navbar.style.bottom = "-36px";
+        navspan.classList.remove("spanFixed");
+    }
+    if (window.clientHeight + window.scrollY >= window.scrollHeight) {
+        window.scrollY -= 1;
+    }
+    last_scrolling_possition = window.scrollY;
+})
+
 
 
 console.log();
